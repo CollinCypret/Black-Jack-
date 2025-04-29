@@ -84,30 +84,30 @@ int Dealer::dealerCalculateHandValue() {
 	return handValue;
 }
 
-void Dealer::result(int playerHandValue)
+void Dealer::result(int playerHandValue, int dealerHandValue)
 {
-	if (handValue > playerHandValue && handValue < 22)
+	if (dealerHandValue > playerHandValue && dealerHandValue < 22)
 	{
 		cout << "Your hand value is " << playerHandValue << endl;
-		cout << "The dealers cards are worth " << handValue << " Points!" << endl;
+		cout << "The dealers cards are worth " << dealerHandValue << " Points!" << endl;
 		cout << "Dealer wins!";
 	}
 	else if (playerHandValue < 22)
 	{
 		cout << "Your hand value is " << playerHandValue << endl;
-		cout << "The dealers cards are worth " << handValue << " Points!" << endl;
+		cout << "The dealers cards are worth " << dealerHandValue << " Points!" << endl;
 		cout << "Player wins!";
 	}
 	else if (playerHandValue > 21)
 	{
 		cout << "Your hand value is " << playerHandValue << endl;
-		cout << "The dealers cards are worth " << handValue << " Points!" << endl;
+		cout << "The dealers cards are worth " << dealerHandValue << " Points!" << endl;
 		cout << "You busted \nDealer wins!";
 	}
 	else
 	{
 		cout << "Your hand value is " << playerHandValue << endl;
-		cout << "The dealers cards are worth " << handValue << " Points!" << endl;
+		cout << "The dealers cards are worth " << dealerHandValue << " Points!" << endl;
 		cout << "Its a standoff (draw).";
 	}
 }

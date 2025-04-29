@@ -15,7 +15,7 @@ public:
 	void showCard();
 	deque<Card> deal();
 	int dealerCalculateHandValue();
-	void result(int playerHandValue);
+	void result(int playerHandValue, int dealerHandValue);
 private:
 	deque<Card> deltCards;
 	deque<Card> Cards;

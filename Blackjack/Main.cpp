@@ -46,7 +46,7 @@ int main()
                 Dealer.showCard();                                      // Dealer shows new card.
             }
         }
-        Dealer.result(PlayerHandValue);                                // Determine who won.
+        Dealer.result(PlayerHandValue, DealerHandValue);                                // Determine who won.
         Player.discard();                                              // Player discards hand.
     }
 }    
