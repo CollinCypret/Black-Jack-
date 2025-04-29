@@ -1,6 +1,6 @@
 This is a Blackjack game created in C++.
 
-Type Y or y for to get cards dealt to player in the game and N or n to decline.
+Type Y or y to get cards dealt to player in the game and N or n to decline.
 
 If the player's (or dealer's) card score goes above 21 then they lose. 
 
